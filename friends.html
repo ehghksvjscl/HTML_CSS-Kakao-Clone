@@ -19,17 +19,17 @@
           1. 상단 좌측,우측 영역(status-bar)
           2. 해더 영역(header)
           3. 네이게이션 바 영역(nav)
-      본문 작업 내용 
-          1. 
-          2. 
-          3. 
+      본문 작업 내용 (모든 영역은 column영역을 구분하여 진행)
+          1. main>>header영역에 나의 정보 영역 작업
+          2. Plus 친구 영역 작업
+          3. 친구목록 영역 작업
       작업 방법 : 
           1. 큰영역을 나눈다(div,header,nav)
           2. 작은영역의 규칙명은 큰영역__작은영역으로 작성한다.
           3. 아이콘 작업시 간격이 상관없는 영역은 그냥 div안에 넣고, 간격이 필요한 영역은 span 태그로 감싸준다.
       
       생성 일자 : 02/11/2020
-      마지막 수정 일자 : 02/11/2020
+      마지막 수정 일자 : 02/12/2020
     -->
     <title>Friends | Kakao Clone</title>
   </head>
@@ -54,10 +54,57 @@
       </div>
       <div class="header__cloumn">
         <span class="header__icon"><i class="fas fa-search"></i> </span>
-        <span class="header__icon"><i class="far fa-comment"></i> </span>
         <span class="header__icon"><i class="fas fa-cog"></i> </span>
       </div>
     </header>
+    <!-- Step4 : 매인 영역(friends) -->
+    <main class="friends">
+      <!-- 내정보 영역 작업 -->
+      <header class="friends__header">
+        <div class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="friend__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Uno</span>
+              <span class="friend__status"
+                >https://ucoding-kakao.netlify.com/friends.html</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 플러스 친구 영역 작업 -->
+      <div class="friends__plus-friend">
+        <h5 class="friends__title">Plus friend</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="friend__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Plus friend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 친구 목옥 영역 작업 -->
+      <h5 class="friends__title">Friends 14</h5>
+      <ul class="friends__list">
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="friend__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Lynn</span>
+              <span class="friend__status"
+                >https://ucoding-kakao.netlify.com/friends.html</span
+              >
+            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__now--listening">FTISAND (FT Uno)</span>
+            <i class="fas fa-play"></i>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- Step3 : 네이게이션 바 영역(nav) -->
     <nav class="nav">
       <ul class="nav__list">

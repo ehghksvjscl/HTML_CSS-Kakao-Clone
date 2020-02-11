@@ -19,10 +19,9 @@
           1. 상단 좌측,우측 영역(status-bar)
           2. 해더 영역(header)
           3. 네이게이션 바 영역(nav)
-      본문 작업 내용 
-          1. 
-          2. 
-          3. 
+      본문 작업 내용(main) 
+          1. header영역 작업(버튼 4개로 구성)
+          2. recomend 영역(추친 친구 영역)
       작업 방법 : 
           1. 큰영역을 나눈다(div,header,nav)
           2. 작은영역의 규칙명은 큰영역__작은영역으로 작성한다.
@@ -54,10 +53,56 @@
       </div>
       <div class="header__cloumn">
         <span class="header__icon"><i class="fas fa-search"></i> </span>
-        <span class="header__icon"><i class="far fa-comment"></i> </span>
         <span class="header__icon"><i class="fas fa-cog"></i> </span>
       </div>
     </header>
+    <!-- Step4 : 매인 영역(find) -->
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header--list">
+          <li class="find__header-btn  header-btn">
+            <span class="header-btn__icon"
+              ><i class="fas fa-qrcode fa-2x"></i
+            ></span>
+            <span class="header-btn__title">QR Code</span>
+          </li>
+          <li class="find__header-btn  header-btn">
+            <span class="header-btn__icon"
+              ><i class="fas fa-user-plus fa-2x"></i
+            ></span>
+            <span class="header-btn__title">Add by Content</span>
+          </li>
+          <li class="find__header-btn  header-btn">
+            <span class="header-btn__icon"
+              ><i class="fas fa-passport fa-2x"></i
+            ></span>
+            <span class="header-btn__title">Add by ID</span>
+          </li>
+          <li class="find__header-btn  header-btn">
+            <span class="header-btn__icon"
+              ><i class="far fa-envelope fa-2x"></i
+            ></span>
+            <span class="header-btn__title">Invite</span>
+          </li>
+        </ul>
+      </header>
+      <ul class="find__recommended">
+        <h5 class="find__title">Recommended Friends</h5>
+        <li class="find__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="friend__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Lynn</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- Step3 : 네이게이션 바 영역(nav) -->
     <nav class="nav">
       <ul class="nav__list">

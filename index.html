@@ -20,16 +20,16 @@
           2. 해더 영역(header)
           3. 네이게이션 바 영역(nav)
       본문 작업 내용 
-          1. 
-          2. 
-          3. 
+          1. Chat 내용에 해당하는 영역(main)
+              1. 채팅영역 생성(chats>>chat)
+              2. 이미지 작업(글로벌 css적용[g-avatar])
       작업 방법 : 
           1. 큰영역을 나눈다(div,header,nav)
           2. 작은영역의 규칙명은 큰영역__작은영역으로 작성한다.
           3. 아이콘 작업시 간격이 상관없는 영역은 그냥 div안에 넣고, 간격이 필요한 영역은 span 태그로 감싸준다.
       
       생성 일자 : 02/11/2020
-      마지막 수정 일자 : 02/11/2020
+      마지막 수정 일자 : 02/12/2020
     -->
     <title>Chats | Kakao Clone</title>
   </head>
@@ -47,6 +47,23 @@
         <i class="fas fa-battery-half"></i>
       </div>
     </div>
+    <!-- Step4 : 매인 영역(chats) -->
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat">
+          <div class="chat__column">
+            <img src="images/avatar.jpg" alt="" class="chat__avatar g-avatar" />
+            <div class="chat__content">
+              <span class="chat__name">Lynn</span>
+              <span class="chat__preview">Going home</span>
+            </div>
+          </div>
+          <div class="chat__column">
+            <span class="chat__timestamp">Yesterday</span>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- Step2 : 해더 영역(header) -->
     <header class="header">
       <div class="header__cloumn">
