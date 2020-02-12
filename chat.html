@@ -10,28 +10,26 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <!-- Index.html
+    <!-- chat.html
       생셩 목적 : 카카오톡 클론을 기본틀을 위한 HTML
       URL : https://ucoding-kakao.netlify.com
       선의 작업 : FontAwesome 홈페이지에서 아이콘을 가져오기위해 link를 해더영역에 추가해준다.(fontawesome 사용을 위한 Link 참조)
       작업 제목 : 카카오톡 클론은 모바일 화면 중점이므로 상단에 시간, 아이콘, 하단 버튼을 구성한다.
       공동 작업 내용 : 각 화면별 단위로 작성한다.
-          1. 상단 좌측,우측 영역(status-bar)
-          2. 해더 영역(header)
-          3. 네이게이션 바 영역(nav)
+          1. more.html을 복사해서 필요한것만 쓴다.
       본문 작업 내용 
-          1. Chat 내용에 해당하는 영역(main)
-              1. 채팅영역 생성(chats>>chat)
-              2. 이미지 작업(글로벌 css적용[g-avatar])
+          1. 해더 영역 수정
+          2. main 영역 작업
+          3. 체팅창 입력 하는 영역 작업
       작업 방법 : 
           1. 큰영역을 나눈다(div,header,nav)
           2. 작은영역의 규칙명은 큰영역__작은영역으로 작성한다.
           3. 아이콘 작업시 간격이 상관없는 영역은 그냥 div안에 넣고, 간격이 필요한 영역은 span 태그로 감싸준다.
       
       생성 일자 : 02/11/2020
-      마지막 수정 일자 : 02/12/2020
+      마지막 수정 일자 : 02/13/2020
     -->
-    <title>Chats | Kakao Clone</title>
+    <title>Chat | Kakao Clone</title>
   </head>
   <body>
     <!-- Step1 : 상단 좌측 시계 영역(status-bar)-->
@@ -50,61 +48,51 @@
     <!-- Step2 : 해더 영역(header) -->
     <header class="header">
       <div class="header__cloumn">
-        <h1 class="header__title">Chats</h1>
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header__title">Best Friend</h1>
       </div>
       <div class="header__cloumn">
         <span class="header__icon"><i class="fas fa-search"></i> </span>
-        <span class="header__icon"><i class="far fa-comment"></i> </span>
-        <span class="header__icon"><i class="fas fa-cog"></i> </span>
+      </div>
+      <div class="header__cloumn">
+        <span class="header__icon"><i class="fas fa-bars"></i> </span>
       </div>
     </header>
-    <!-- Step4 : 매인 영역(chats) -->
-    <main class="chats">
-      <ul class="chats__list">
-        <a href="chat.html">
-          <li class="chats__chat">
-            <div class="chat__column">
-              <img
-                src="images/avatar.jpg"
-                alt=""
-                class="chat__avatar g-avatar"
-              />
-              <div class="chat__content">
-                <span class="chat__name">Lynn</span>
-                <span class="chat__preview">Going home</span>
-              </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
-            </div>
-          </li>
-        </a>
+    <!-- Step3 : main 영역(chat) -->
+    <main class="chat">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">Friday, January 11, 2020</span>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">Best Friend</span>
+            <div class="message__buble">Congrats I Love you</div>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="incoming-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__buble">Can I borrow me any money?</div>
+          </div>
+        </li>
       </ul>
     </main>
-    <!-- Step3 : 네이게이션 바 영역(nav) -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link"
-            ><i class="far fa-user"></i
-          ></a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link"
-            ><i class="fas fa-comment"></i
-          ></a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link"
-            ><i class="fas fa-search"></i
-          ></a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link"
-            ><i class="fas fa-ellipsis-h"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <!-- Step4 : 하단 체팅입력 영역 -->
+    <div class="chat__icon-left chat__icon">
+      <i class="far fa-plus-square"></i>
+    </div>
+    <div class="chat__write-container">
+      <input
+        class="chat__write"
+        type="text"
+        placeholder="Send message"
+        class="chat__write-input"
+      />
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon"><i class="far fa-smile-wink"></i></span>
+        <span class="chat__write-icon"><i class="fas fa-microphone"></i></span>
+      </div>
+    </div>
   </body>
 </html>
