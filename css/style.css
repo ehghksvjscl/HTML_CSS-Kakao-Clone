@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+
+/*전체 초기값 새팅 */
+/* box-sizing 값은 박스 사이즈 값을 볼더 기준으로 설정 */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans";
+}

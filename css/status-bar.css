@@ -1,0 +1,32 @@
+/* 상태줄 작업 */
+.status-bar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+/* display: flex; 
+여려줄 되어 있는걸 한줄로? */
+
+/* 
+justify-content: space-between; 
+  div로 묶여 있는것을 최대한 벌린다 */
+
+.status-bar i {
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.status-bar__clock {
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.status-bar .topbar__battery--level {
+  margin-left: 5px;
+}

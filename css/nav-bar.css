@@ -1,0 +1,22 @@
+/* position: fixed; 는 width가 필요하다 
+    참고로 bottom으로 설정하면 밑에 붙고
+    top 으로 설정하면 위에 붙는다.
+    left로 전체 설정값인 페딩값을 없에준다..
+*/
+.nav {
+  background-color: #fcfcfc;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 50px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav i {
+  font-size: 20px;
+}
