@@ -3,11 +3,13 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 /*전체 초기값 새팅 */
 /* box-sizing 값은 박스 사이즈 값을 볼더 기준으로 설정 */
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   background-color: white;

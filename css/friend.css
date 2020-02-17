@@ -1,0 +1,40 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+  margin-right: 10px;
+}
+
+.g-avatar {
+  width: 70px;
+}
+
+.m-avatar {
+  width: 60px;
+}
+
+.friend__column {
+  display: flex;
+  align-items: center;
+}
+/* 한줄로 되어있는 것을 2줄로  */
+.friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__bottom-text {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.friend__status,
+.chat__timestamp {
+  opacity: 0.6;
+  font-size: 12px;
+}
