@@ -4,6 +4,9 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
 
 /*전체 초기값 새팅 */
 /* box-sizing 값은 박스 사이즈 값을 볼더 기준으로 설정 */
